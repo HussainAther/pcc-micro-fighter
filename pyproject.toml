@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcc-micro-fighter"
+version = "0.1.0"
+description = "Minimal headless 1v1 micro-fighter laboratory for cross-domain PCC experiments"
+requires-python = ">=3.10"
+authors = [{name = "Syed Hussain Ather"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+pcc-micro-fighter = "pcc_micro_fighter.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pcc_micro_fighter*"]

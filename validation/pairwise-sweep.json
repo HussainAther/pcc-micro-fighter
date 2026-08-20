@@ -1,0 +1,87 @@
+{
+  "design": {
+    "matches_per_order": 100,
+    "seed": 1000,
+    "seat_balanced": true
+  },
+  "matchups": [
+    {
+      "a": "neutral",
+      "b": "pressure",
+      "a_win_rate": 0.27,
+      "b_win_rate": 0.53,
+      "draw_rate": 0.2,
+      "a_mean_net_damage": -0.405,
+      "b_mean_net_damage": 0.405,
+      "a_mean_action_entropy": 1.4679712128819076,
+      "b_mean_action_entropy": 1.0702496713669594,
+      "a_mean_spatial_constriction": 0.08482919001763739,
+      "b_mean_spatial_constriction": 0.13377927628168215
+    },
+    {
+      "a": "neutral",
+      "b": "control",
+      "a_win_rate": 0.18,
+      "b_win_rate": 0.65,
+      "draw_rate": 0.17,
+      "a_mean_net_damage": -0.985,
+      "b_mean_net_damage": 0.985,
+      "a_mean_action_entropy": 1.4716523111561388,
+      "b_mean_action_entropy": 1.2175056331748848,
+      "a_mean_spatial_constriction": 0.06882309014477231,
+      "b_mean_spatial_constriction": 0.10111435346514716
+    },
+    {
+      "a": "neutral",
+      "b": "chaos",
+      "a_win_rate": 0.84,
+      "b_win_rate": 0.105,
+      "draw_rate": 0.055,
+      "a_mean_net_damage": 1.76,
+      "b_mean_net_damage": -1.76,
+      "a_mean_action_entropy": 1.503064248662453,
+      "b_mean_action_entropy": 1.5288161611714037,
+      "a_mean_spatial_constriction": 0.10639328145844801,
+      "b_mean_spatial_constriction": 0.12879582073476176
+    },
+    {
+      "a": "pressure",
+      "b": "control",
+      "a_win_rate": 0.0,
+      "b_win_rate": 0.775,
+      "draw_rate": 0.225,
+      "a_mean_net_damage": -1.235,
+      "b_mean_net_damage": 1.235,
+      "a_mean_action_entropy": 1.0583129769814028,
+      "b_mean_action_entropy": 1.1775582986872444,
+      "a_mean_spatial_constriction": 0.14263483766453916,
+      "b_mean_spatial_constriction": 0.09780706826219279
+    },
+    {
+      "a": "pressure",
+      "b": "chaos",
+      "a_win_rate": 0.81,
+      "b_win_rate": 0.11,
+      "draw_rate": 0.08,
+      "a_mean_net_damage": 1.61,
+      "b_mean_net_damage": -1.61,
+      "a_mean_action_entropy": 1.0687089150477735,
+      "b_mean_action_entropy": 1.5145467160294424,
+      "a_mean_spatial_constriction": 0.15766740190621822,
+      "b_mean_spatial_constriction": 0.12576806130682236
+    },
+    {
+      "a": "control",
+      "b": "chaos",
+      "a_win_rate": 0.805,
+      "b_win_rate": 0.11,
+      "draw_rate": 0.085,
+      "a_mean_net_damage": 1.695,
+      "b_mean_net_damage": -1.695,
+      "a_mean_action_entropy": 1.2500176415247994,
+      "b_mean_action_entropy": 1.534689926664773,
+      "a_mean_spatial_constriction": 0.10828215336634038,
+      "b_mean_spatial_constriction": 0.10153285404189101
+    }
+  ]
+}
