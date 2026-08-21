@@ -1,0 +1,55 @@
+{
+  "status": "frozen_v05_vs_v07_retreat_backfire_decomposition",
+  "design": {
+    "version": "0.8.0",
+    "matches_per_order": 400,
+    "seed": 86001,
+    "seat_balanced": true,
+    "policies_modified": false,
+    "v05_comparator": "Family B Control with v0.5 punish-window rule but without v0.7 sustained-threat recovery rule",
+    "v07_target": "Current Family B Control including rejected sustained-threat recovery rule",
+    "prespecified_mechanisms": [
+      "initiative_forfeiture",
+      "free_reentry",
+      "boundary_or_resolution_saturation",
+      "defensive_displacement_persistence"
+    ],
+    "post_result_tuning_allowed": false
+  },
+  "v0.5": {
+    "pressure_wins": 601,
+    "control_wins": 128,
+    "draws": 71,
+    "pressure_decisive_win_rate": 0.8244170096021948,
+    "control_mean_health_margin": -1.25125
+  },
+  "v0.7": {
+    "pressure_wins": 756,
+    "control_wins": 18,
+    "draws": 26,
+    "pressure_decisive_win_rate": 0.9767441860465116,
+    "control_mean_health_margin": -2.5325,
+    "retreat_backfire": {
+      "retreat_trigger_events": 2343,
+      "attack_available_proxy_events": 2062,
+      "distance_gain_events": 469,
+      "ineffective_retreat_events": 1874,
+      "immediate_free_reentry_events": 412,
+      "persistent_two_tick_displacement_events": 5,
+      "initiative_forfeiture_proxy_rate": 0.8800682885189928,
+      "retreat_ineffectiveness_rate": 0.7998292787025182,
+      "distance_gain_rate": 0.20017072129748187,
+      "immediate_free_reentry_rate_given_gain": 0.8784648187633263,
+      "two_tick_displacement_persistence_rate_given_gain": 0.010660980810234541,
+      "mean_damage_received_next_two_ticks": 0.6610625
+    }
+  },
+  "prespecified_checks": {
+    "v07_worse_than_v05": true,
+    "initiative_forfeiture_proxy_at_least_0_50": true,
+    "free_reentry_given_gain_at_least_0_25": true,
+    "boundary_or_resolution_failure_at_least_0_20": true,
+    "two_tick_displacement_persistence_below_0_50": true
+  },
+  "primary_explanation": "Retreat backfire is attributed to the mechanisms that meet their prespecified descriptive thresholds; no single mechanism is required to explain the full win-rate regression."
+}

@@ -1,3 +1,10 @@
+## 0.8.0
+
+- Added frozen v0.5-vs-v0.7 retreat-backfire decomposition.
+- Tested initiative forfeiture, immediate Pressure re-entry, ineffective retreat, and displacement persistence without changing policies.
+- Retained the negative v0.7 intervention result: all four backfire mechanisms crossed their prespecified descriptive thresholds.
+- Added protocol, frozen result, validation artifact, CLI support, and regression tests.
+
 ## 0.7.0
 
 - Added one prospectively specified Family B Control sustained-threat recognition / spatial-recovery rule.

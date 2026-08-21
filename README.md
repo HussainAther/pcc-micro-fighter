@@ -104,3 +104,13 @@ python -m pcc_micro_fighter control-recovery-intervention
 ```
 
 See `docs/PROSPECTIVE_CONTROL_RECOVERY_INTERVENTION_v0.7.0.md` and `docs/FROZEN_CONTROL_RECOVERY_RESULT_v0.7.0.md`.
+
+## v0.8 retreat-backfire decomposition
+
+The rejected v0.7 sustained-threat retreat rule was compared directly with the v0.5 Family B Control policy without changing either policy. The diagnostic shows that retreat is usually ineffective, successful separation is rapidly erased by Pressure, and retreat often forfeits plausible initiative. See `docs/RETREAT_BACKFIRE_DECOMPOSITION_PROTOCOL.md` and `docs/FROZEN_RETREAT_BACKFIRE_RESULT_v0.8.0.md`.
+
+Run:
+
+```bash
+python -m pcc_micro_fighter retreat-backfire
+```

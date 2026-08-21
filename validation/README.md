@@ -34,3 +34,5 @@ Reruns the unchanged v0.2 competitiveness gate after modifying only Family B Con
 Reruns the unchanged v0.2 competitiveness gate after one Family B Control change motivated by v0.6: recognition of sustained close Pressure with defense against attacks and retreat after advances. The target Pressure-vs-Control matchup worsened, while Control-vs-Chaos remained competitive. The negative result is retained and construct recovery remains blocked.
 
 `competitiveness-v0.7.0.json` is the raw unchanged-gate output for the v0.7 policy state.
+
+- `retreat-backfire-decomposition.json`: frozen v0.8 comparison explaining why the rejected v0.7 retreat rule backfires relative to v0.5.

@@ -8,6 +8,7 @@ from .threat_conversion import write_threat_conversion
 from .control_counter_intervention import write_control_counter_intervention
 from .residual_pressure import write_residual_pressure
 from .control_recovery_intervention import write_control_recovery_intervention
+from .retreat_backfire import write_retreat_backfire_decomposition
 from .observables import summarize
 from .policies import POLICIES
 
@@ -43,6 +44,10 @@ def main() -> int:
     recovery.add_argument("--matches-per-order", type=int, default=400)
     recovery.add_argument("--seed", type=int, default=42001)
     recovery.add_argument("--output", default="validation/control-recovery-intervention-v0.7.0.json")
+    retreat = sub.add_parser("retreat-backfire")
+    retreat.add_argument("--matches-per-order", type=int, default=400)
+    retreat.add_argument("--seed", type=int, default=86001)
+    retreat.add_argument("--output", default="validation/retreat-backfire-decomposition.json")
     residual = sub.add_parser("residual-pressure")
     residual.add_argument("--matches-per-order", type=int, default=400)
     residual.add_argument("--seed", type=int, default=75001)
@@ -54,6 +59,10 @@ def main() -> int:
         return 0
     if args.cmd == "control-recovery-intervention":
         report = write_control_recovery_intervention(args.output, args.matches_per_order, args.seed)
+        print(json.dumps(report, indent=2))
+        return 0
+    if args.cmd == "retreat-backfire":
+        report = write_retreat_backfire_decomposition(args.output, args.matches_per_order, args.seed)
         print(json.dumps(report, indent=2))
         return 0
     if args.cmd == "residual-pressure":
