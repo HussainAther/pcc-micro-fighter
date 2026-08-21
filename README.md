@@ -114,3 +114,18 @@ Run:
 ```bash
 python -m pcc_micro_fighter retreat-backfire
 ```
+
+
+## v0.9 effective Chaos validation
+
+Micro-Fighter now includes a frozen test of the proposition **Chaos is not randomness**. A predictable competent baseline, a state-aware random baseline, and an effective-Chaos candidate are evaluated against both the neutral policy and a fixed adaptive public-history exploiter.
+
+The random baseline had *higher* conditional action entropy than the effective-Chaos candidate (`0.933` vs `0.878`) but much worse value against neutral play (`0.031` vs `0.418` decisive win rate). The effective-Chaos candidate passed all four prespecified checks, including preserved value and resistance to the fixed adaptive exploiter. However, the exploiter itself did not outperform the predictable baseline, so this remains provisional mechanism support pending a prospectively calibrated exploiter.
+
+Run:
+
+```bash
+python -m pcc_micro_fighter chaos-validation
+```
+
+See `docs/CHAOS_EFFECTIVE_UNPREDICTABILITY_PROTOCOL.md` and `docs/FROZEN_EFFECTIVE_CHAOS_RESULT_v0.9.0.md`. This is mechanism evidence, not full construct recovery.

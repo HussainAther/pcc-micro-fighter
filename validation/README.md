@@ -36,3 +36,8 @@ Reruns the unchanged v0.2 competitiveness gate after one Family B Control change
 `competitiveness-v0.7.0.json` is the raw unchanged-gate output for the v0.7 policy state.
 
 - `retreat-backfire-decomposition.json`: frozen v0.8 comparison explaining why the rejected v0.7 retreat rule backfires relative to v0.5.
+
+
+## `effective-chaos-validation-v0.9.0.json` — frozen effective-Chaos result
+
+Tests predictable competent, state-aware random, and effective-Chaos candidate policies against neutral and a fixed adaptive exploiter. All four prespecified checks pass, but the fixed exploiter did not outperform the predictable baseline, so exploiter calibration remains an explicit limitation. The random baseline is more entropic than the effective-Chaos candidate while being far less competitively adequate, directly supporting the distinction `Chaos != randomness`. This remains mechanism evidence rather than full construct recovery.

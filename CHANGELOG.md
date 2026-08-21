@@ -1,3 +1,14 @@
+# Changelog
+
+## 0.9.0
+
+- Added a frozen Micro-Fighter effective-Chaos validation.
+- Explicitly tests the proposition that Chaos is not equivalent to randomness or entropy.
+- Added predictable-competent, state-aware-random, effective-Chaos, and fixed adaptive-exploiter evaluation policies without modifying prior frozen P/C/Ch policies.
+- The random baseline had higher conditional entropy than the effective-Chaos candidate but substantially worse competitive value.
+- The effective-Chaos candidate passed all four prespecified unpredictability, adequacy, and adaptive-resistance checks.
+- Retains the interpretation as game-specific mechanism evidence rather than universal construct recovery.
+
 ## 0.8.0
 
 - Added frozen v0.5-vs-v0.7 retreat-backfire decomposition.
@@ -15,7 +26,6 @@
 - Retained the negative intervention result without a second post-result adjustment.
 - Construct recovery remains blocked.
 
-# Changelog
 
 ## 0.5.0
 

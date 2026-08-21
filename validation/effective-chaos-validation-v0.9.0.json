@@ -1,0 +1,78 @@
+{
+  "status": "completed",
+  "design": {
+    "status": "frozen_effective_chaos_validation",
+    "matches_per_order": 400,
+    "seed": 97001,
+    "seat_balanced": true,
+    "human_data": false,
+    "policy_scope": "evaluation-only v0.9 policies; prior P/C/Ch policies unchanged"
+  },
+  "results": {
+    "predictable_competent": {
+      "neutral": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 800,
+        "decisive_win_rate": 0.5,
+        "mean_health_margin": 0,
+        "conditional_action_entropy": 0.3229324828952122
+      },
+      "adaptive_exploiter": {
+        "wins": 0,
+        "losses": 0,
+        "draws": 800,
+        "decisive_win_rate": 0.5,
+        "mean_health_margin": 0,
+        "conditional_action_entropy": 0.07385249373754336
+      },
+      "exploitability_health_loss": 0
+    },
+    "state_random": {
+      "neutral": {
+        "wins": 24,
+        "losses": 748,
+        "draws": 28,
+        "decisive_win_rate": 0.031088082901554404,
+        "mean_health_margin": -2.60875,
+        "conditional_action_entropy": 0.932867086527392
+      },
+      "adaptive_exploiter": {
+        "wins": 418,
+        "losses": 352,
+        "draws": 30,
+        "decisive_win_rate": 0.5428571428571428,
+        "mean_health_margin": 0.53625,
+        "conditional_action_entropy": 0.9558135399821911
+      },
+      "exploitability_health_loss": -3.145
+    },
+    "effective_chaos": {
+      "neutral": {
+        "wins": 290,
+        "losses": 403,
+        "draws": 107,
+        "decisive_win_rate": 0.4184704184704185,
+        "mean_health_margin": -0.2725,
+        "conditional_action_entropy": 0.8776176918623224
+      },
+      "adaptive_exploiter": {
+        "wins": 683,
+        "losses": 77,
+        "draws": 40,
+        "decisive_win_rate": 0.8986842105263158,
+        "mean_health_margin": 2.32875,
+        "conditional_action_entropy": 0.8578804716371933
+      },
+      "exploitability_health_loss": -2.60125
+    }
+  },
+  "prespecified_checks": {
+    "effective_chaos_entropy_exceeds_predictable_by_0_10": true,
+    "effective_chaos_preserves_value_over_random": true,
+    "effective_chaos_reduces_exploitability_vs_predictable_by_0_25": true,
+    "effective_chaos_preserves_value_over_random_under_exploitation": true
+  },
+  "effective_chaos_confirmed": true,
+  "interpretation": "Chaos requires unpredictability plus preserved strategic adequacy and resistance to a fixed adaptive exploiter; high entropy alone is insufficient."
+}

@@ -9,6 +9,7 @@ from .control_counter_intervention import write_control_counter_intervention
 from .residual_pressure import write_residual_pressure
 from .control_recovery_intervention import write_control_recovery_intervention
 from .retreat_backfire import write_retreat_backfire_decomposition
+from .chaos_validation import write_chaos_validation
 from .observables import summarize
 from .policies import POLICIES
 
@@ -48,6 +49,10 @@ def main() -> int:
     retreat.add_argument("--matches-per-order", type=int, default=400)
     retreat.add_argument("--seed", type=int, default=86001)
     retreat.add_argument("--output", default="validation/retreat-backfire-decomposition.json")
+    chaos = sub.add_parser("chaos-validation")
+    chaos.add_argument("--matches-per-order", type=int, default=400)
+    chaos.add_argument("--seed", type=int, default=97001)
+    chaos.add_argument("--output", default="validation/effective-chaos-validation-v0.9.0.json")
     residual = sub.add_parser("residual-pressure")
     residual.add_argument("--matches-per-order", type=int, default=400)
     residual.add_argument("--seed", type=int, default=75001)
@@ -56,6 +61,10 @@ def main() -> int:
     if args.cmd == "simulate":
         r = simulate_match(POLICIES[args.p0](), POLICIES[args.p1](), args.seed)
         print(json.dumps({"winner": r.winner, "ticks": r.ticks, "health": r.health, "p0": summarize(r,0), "p1": summarize(r,1)}, indent=2))
+        return 0
+    if args.cmd == "chaos-validation":
+        report = write_chaos_validation(args.output, args.matches_per_order, args.seed)
+        print(json.dumps(report, indent=2))
         return 0
     if args.cmd == "control-recovery-intervention":
         report = write_control_recovery_intervention(args.output, args.matches_per_order, args.seed)
