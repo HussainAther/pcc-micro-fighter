@@ -1,4 +1,4 @@
-.PHONY: install test smoke chaos-validation preflight
+.PHONY: install test smoke chaos-validation strong-exploiter-chaos preflight
 install:
 	python -m pip install -e ".[dev]"
 test:
@@ -7,5 +7,7 @@ smoke:
 	python -m pcc_micro_fighter sweep --matches-per-order 25 --output validation/pairwise-sweep.json
 chaos-validation:
 	python -m pcc_micro_fighter chaos-validation --output validation/effective-chaos-validation-v0.9.0.json
-preflight: test smoke chaos-validation
-	@echo "Micro-Fighter v0.9 preflight passed."
+strong-exploiter-chaos:
+	python -m pcc_micro_fighter strong-exploiter-chaos --output validation/strong-exploiter-chaos-validation-v1.0.0.json
+preflight: test smoke chaos-validation strong-exploiter-chaos
+	@echo "Micro-Fighter v1.0 preflight passed."

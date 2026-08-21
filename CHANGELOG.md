@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0
+
+- Added a prospectively calibrated adaptive exploiter using only predictable-baseline calibration data.
+- Froze the selected exploiter before any state-random or effective-Chaos held-out evaluation.
+- The selected exploiter drove predictable play to a `0.000` decisive win rate on held-out seeds.
+- Effective Chaos retained positive held-out value (`0.720` decisive win rate; `+1.015` mean health margin), substantially exceeding both predictable and state-random play.
+- Strengthens the game-specific proposition that Chaos is not randomness while preserving the boundary between mechanism evidence and universal construct recovery.
+
 ## 0.9.0
 
 - Added a frozen Micro-Fighter effective-Chaos validation.

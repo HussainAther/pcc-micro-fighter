@@ -129,3 +129,20 @@ python -m pcc_micro_fighter chaos-validation
 ```
 
 See `docs/CHAOS_EFFECTIVE_UNPREDICTABILITY_PROTOCOL.md` and `docs/FROZEN_EFFECTIVE_CHAOS_RESULT_v0.9.0.md`. This is mechanism evidence, not full construct recovery.
+
+## v1.0 strong adaptive-exploiter falsification
+
+The v0.9 fixed adaptive opponent was not itself competent enough to exploit the predictable baseline. v1.0 therefore calibrates a stronger public-history exploiter **only against predictable competent play**, freezes the selected exploiter, and then evaluates predictable, state-random, and effective-Chaos policies on held-out seeds.
+
+The selected exploiter reduced predictable play to a `0.000` decisive win rate on held-out seeds. Effective Chaos then achieved a `0.720` decisive win rate and `+1.015` mean health margin against that same frozen exploiter, while state-aware random play achieved `0.381` and `-0.539`.
+
+This strengthens the game-specific proposition that **Chaos is not randomness**: resistance to adaptation must be paired with strategic adequacy. It remains mechanism evidence, not universal construct recovery.
+
+Run:
+
+```bash
+python -m pcc_micro_fighter strong-exploiter-chaos
+```
+
+See `docs/STRONG_EXPLOITER_CHAOS_PROTOCOL.md` and `docs/FROZEN_STRONG_EXPLOITER_CHAOS_RESULT_v1.0.0.md`.
+

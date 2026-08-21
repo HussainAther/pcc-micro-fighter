@@ -41,3 +41,7 @@ Reruns the unchanged v0.2 competitiveness gate after one Family B Control change
 ## `effective-chaos-validation-v0.9.0.json` — frozen effective-Chaos result
 
 Tests predictable competent, state-aware random, and effective-Chaos candidate policies against neutral and a fixed adaptive exploiter. All four prespecified checks pass, but the fixed exploiter did not outperform the predictable baseline, so exploiter calibration remains an explicit limitation. The random baseline is more entropic than the effective-Chaos candidate while being far less competitively adequate, directly supporting the distinction `Chaos != randomness`. This remains mechanism evidence rather than full construct recovery.
+
+## v1.0 strong adaptive-exploiter Chaos falsification
+
+`strong-exploiter-chaos-validation-v1.0.0.json` contains the two-stage calibration/held-out falsification. Exploiter selection uses only the predictable competent baseline; the selected candidate is frozen before state-random or effective-Chaos evaluation.
