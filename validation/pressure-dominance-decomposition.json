@@ -1,0 +1,421 @@
+{
+  "pressure_dominance_decomposition_confirmed": false,
+  "status": "descriptive_mechanism_decomposition",
+  "design": {
+    "policy_version": "0.2.0",
+    "policies_modified": false,
+    "matches_per_order": 300,
+    "seed": 53001,
+    "seat_order_balanced": true,
+    "standard_arena": [
+      0,
+      6
+    ],
+    "compact_arena": [
+      0,
+      3
+    ],
+    "candidate_mechanisms": [
+      "space_capture",
+      "attack_opportunity_generation",
+      "defensive_response_forcing",
+      "damage_conversion"
+    ],
+    "post_result_policy_tuning_allowed": false
+  },
+  "families": {
+    "A": {
+      "standard_matchups": [
+        {
+          "opponent": "control",
+          "pressure_decisive_win_rate": 0.0,
+          "wins_pressure": 0,
+          "wins_opponent": 432,
+          "draws": 168,
+          "pressure": {
+            "spatial_compression_per_tick": 0.13930556147993634,
+            "attack_rate": 0.3590557726866978,
+            "in_range_attack_rate": 0.3590557726866978,
+            "hit_rate_per_attack": 0.39621235019585954,
+            "threat_rate": 0.6192811815367455,
+            "next_tick_defensive_response_rate": 0.6983778480988982,
+            "damage_dealt_per_match": 3.783333333333333,
+            "damage_taken_per_match": 5.0,
+            "net_damage_per_match": -1.2166666666666666,
+            "damage_per_threat_tick": 0.22988140943893592
+          },
+          "opponent_metrics": {
+            "spatial_compression_per_tick": 0.09219385554591741,
+            "attack_rate": 0.29064652862999973,
+            "in_range_attack_rate": 0.29064652862999973,
+            "hit_rate_per_attack": 0.6365720377117436,
+            "threat_rate": 0.34074979198311933,
+            "next_tick_defensive_response_rate": 0.3934194781253605,
+            "damage_dealt_per_match": 5.0,
+            "damage_taken_per_match": 3.783333333333333,
+            "net_damage_per_match": 1.2166666666666666,
+            "damage_per_threat_tick": 0.5411179457367538
+          },
+          "pressure_minus_opponent": {
+            "spatial_compression_per_tick": 0.04711170593401892,
+            "attack_rate": 0.06840924405669807,
+            "in_range_attack_rate": 0.06840924405669807,
+            "hit_rate_per_attack": -0.2403596875158841,
+            "threat_rate": 0.27853138955362616,
+            "next_tick_defensive_response_rate": 0.30495836997353776,
+            "damage_dealt_per_match": -1.2166666666666668,
+            "damage_taken_per_match": 1.2166666666666668,
+            "net_damage_per_match": -2.433333333333333,
+            "damage_per_threat_tick": -0.31123653629781783
+          },
+          "compact_arena_pressure_win_rate": 0.0,
+          "pressure_win_rate_change_when_starting_in_range": 0.0
+        },
+        {
+          "opponent": "chaos",
+          "pressure_decisive_win_rate": 0.8940754039497307,
+          "wins_pressure": 498,
+          "wins_opponent": 59,
+          "draws": 43,
+          "pressure": {
+            "spatial_compression_per_tick": 0.1564626678455752,
+            "attack_rate": 0.3534714260464614,
+            "in_range_attack_rate": 0.34850525450499387,
+            "hit_rate_per_attack": 0.5735991883073926,
+            "threat_rate": 0.6369106482878103,
+            "next_tick_defensive_response_rate": 0.593972920729565,
+            "damage_dealt_per_match": 4.86,
+            "damage_taken_per_match": 3.1683333333333334,
+            "net_damage_per_match": 1.6916666666666667,
+            "damage_per_threat_tick": 0.3188862998495563
+          },
+          "opponent_metrics": {
+            "spatial_compression_per_tick": 0.1246782672296457,
+            "attack_rate": 0.21037419319409317,
+            "in_range_attack_rate": 0.21037419319409317,
+            "hit_rate_per_attack": 0.6077095497095497,
+            "threat_rate": 0.41186808216113147,
+            "next_tick_defensive_response_rate": 0.39029472678737387,
+            "damage_dealt_per_match": 3.1683333333333334,
+            "damage_taken_per_match": 4.86,
+            "net_damage_per_match": -1.6916666666666667,
+            "damage_per_threat_tick": 0.3124919392899269
+          },
+          "pressure_minus_opponent": {
+            "spatial_compression_per_tick": 0.03178440061592949,
+            "attack_rate": 0.14309723285236825,
+            "in_range_attack_rate": 0.1381310613109007,
+            "hit_rate_per_attack": -0.03411036140215706,
+            "threat_rate": 0.22504256612667883,
+            "next_tick_defensive_response_rate": 0.2036781939421911,
+            "damage_dealt_per_match": 1.6916666666666669,
+            "damage_taken_per_match": -1.6916666666666669,
+            "net_damage_per_match": 3.3833333333333333,
+            "damage_per_threat_tick": 0.006394360559629386
+          },
+          "compact_arena_pressure_win_rate": 0.9019607843137255,
+          "pressure_win_rate_change_when_starting_in_range": 0.007885380363994776
+        }
+      ],
+      "compact_arena_matchups": [
+        {
+          "opponent": "control",
+          "pressure_decisive_win_rate": 0.0,
+          "wins_pressure": 0,
+          "wins_opponent": 411,
+          "draws": 189,
+          "pressure": {
+            "spatial_compression_per_tick": 0.03665689504689167,
+            "attack_rate": 0.39106249747256094,
+            "in_range_attack_rate": 0.39106249747256094,
+            "hit_rate_per_attack": 0.3720445706550869,
+            "threat_rate": 0.5934670445610173,
+            "next_tick_defensive_response_rate": 0.7862847365476833,
+            "damage_dealt_per_match": 3.8766666666666665,
+            "damage_taken_per_match": 5.0,
+            "net_damage_per_match": -1.1233333333333333,
+            "damage_per_threat_tick": 0.25169500209357953
+          },
+          "opponent_metrics": {
+            "spatial_compression_per_tick": 0.0,
+            "attack_rate": 0.2883334110822964,
+            "in_range_attack_rate": 0.2883334110822964,
+            "hit_rate_per_attack": 0.6505708561590915,
+            "threat_rate": 0.2883334110822964,
+            "next_tick_defensive_response_rate": 0.4207275174444292,
+            "damage_dealt_per_match": 5.0,
+            "damage_taken_per_match": 3.8766666666666665,
+            "net_damage_per_match": 1.1233333333333333,
+            "damage_per_threat_tick": 0.6505708561590915
+          },
+          "pressure_minus_opponent": {
+            "spatial_compression_per_tick": 0.03665689504689167,
+            "attack_rate": 0.10272908639026457,
+            "in_range_attack_rate": 0.10272908639026457,
+            "hit_rate_per_attack": -0.2785262855040046,
+            "threat_rate": 0.3051336334787209,
+            "next_tick_defensive_response_rate": 0.36555721910325406,
+            "damage_dealt_per_match": -1.1233333333333335,
+            "damage_taken_per_match": 1.1233333333333335,
+            "net_damage_per_match": -2.2466666666666666,
+            "damage_per_threat_tick": -0.39887585406551196
+          }
+        },
+        {
+          "opponent": "chaos",
+          "pressure_decisive_win_rate": 0.9019607843137255,
+          "wins_pressure": 506,
+          "wins_opponent": 55,
+          "draws": 39,
+          "pressure": {
+            "spatial_compression_per_tick": 0.037306245013344,
+            "attack_rate": 0.4024689819476473,
+            "in_range_attack_rate": 0.3957130044209836,
+            "hit_rate_per_attack": 0.5635338182289908,
+            "threat_rate": 0.6095009143725091,
+            "next_tick_defensive_response_rate": 0.622067477656269,
+            "damage_dealt_per_match": 4.87,
+            "damage_taken_per_match": 3.1416666666666666,
+            "net_damage_per_match": 1.7283333333333333,
+            "damage_per_threat_tick": 0.37747148675808323
+          },
+          "opponent_metrics": {
+            "spatial_compression_per_tick": 0.03471290986428864,
+            "attack_rate": 0.2321333244333271,
+            "in_range_attack_rate": 0.2321333244333271,
+            "hit_rate_per_attack": 0.6192658128908128,
+            "threat_rate": 0.39645087702325527,
+            "next_tick_defensive_response_rate": 0.404445651434622,
+            "damage_dealt_per_match": 3.1416666666666666,
+            "damage_taken_per_match": 4.87,
+            "net_damage_per_match": -1.7283333333333333,
+            "damage_per_threat_tick": 0.36733016017207193
+          },
+          "pressure_minus_opponent": {
+            "spatial_compression_per_tick": 0.0025933351490553605,
+            "attack_rate": 0.1703356575143202,
+            "in_range_attack_rate": 0.16357967998765652,
+            "hit_rate_per_attack": -0.05573199466182199,
+            "threat_rate": 0.21305003734925382,
+            "next_tick_defensive_response_rate": 0.217621826221647,
+            "damage_dealt_per_match": 1.7283333333333335,
+            "damage_taken_per_match": -1.7283333333333335,
+            "net_damage_per_match": 3.4566666666666666,
+            "damage_per_threat_tick": 0.010141326586011301
+          }
+        }
+      ]
+    },
+    "B": {
+      "standard_matchups": [
+        {
+          "opponent": "control",
+          "pressure_decisive_win_rate": 0.9299242424242424,
+          "wins_pressure": 491,
+          "wins_opponent": 37,
+          "draws": 72,
+          "pressure": {
+            "spatial_compression_per_tick": 0.23052283786799946,
+            "attack_rate": 0.39447923925724176,
+            "in_range_attack_rate": 0.39028241490723026,
+            "hit_rate_per_attack": 0.7406710927960928,
+            "threat_rate": 0.664628903941012,
+            "next_tick_defensive_response_rate": 0.7613529653396139,
+            "damage_dealt_per_match": 4.93,
+            "damage_taken_per_match": 3.3366666666666664,
+            "net_damage_per_match": 1.5933333333333333,
+            "damage_per_threat_tick": 0.4440237465134911
+          },
+          "opponent_metrics": {
+            "spatial_compression_per_tick": 0.1790487120139018,
+            "attack_rate": 0.23649200485963204,
+            "in_range_attack_rate": 0.2306127819015817,
+            "hit_rate_per_attack": 0.8222056878306878,
+            "threat_rate": 0.44685208247611463,
+            "next_tick_defensive_response_rate": 0.44744523994523994,
+            "damage_dealt_per_match": 3.3366666666666664,
+            "damage_taken_per_match": 4.93,
+            "net_damage_per_match": -1.5933333333333333,
+            "damage_per_threat_tick": 0.44316409516409516
+          },
+          "pressure_minus_opponent": {
+            "spatial_compression_per_tick": 0.05147412585409766,
+            "attack_rate": 0.15798723439760973,
+            "in_range_attack_rate": 0.15966963300564857,
+            "hit_rate_per_attack": -0.08153459503459504,
+            "threat_rate": 0.2177768214648974,
+            "next_tick_defensive_response_rate": 0.313907725394374,
+            "damage_dealt_per_match": 1.5933333333333333,
+            "damage_taken_per_match": -1.5933333333333333,
+            "net_damage_per_match": 3.1866666666666665,
+            "damage_per_threat_tick": 0.0008596513493959179
+          },
+          "compact_arena_pressure_win_rate": 0.9287054409005628,
+          "pressure_win_rate_change_when_starting_in_range": -0.0012188015236795913
+        },
+        {
+          "opponent": "chaos",
+          "pressure_decisive_win_rate": 0.8809523809523809,
+          "wins_pressure": 481,
+          "wins_opponent": 65,
+          "draws": 54,
+          "pressure": {
+            "spatial_compression_per_tick": 0.1889861038571891,
+            "attack_rate": 0.3894945812396772,
+            "in_range_attack_rate": 0.3832531140261357,
+            "hit_rate_per_attack": 0.5894414060455082,
+            "threat_rate": 0.6612541101368165,
+            "next_tick_defensive_response_rate": 0.5872453453672571,
+            "damage_dealt_per_match": 4.838333333333333,
+            "damage_taken_per_match": 3.29,
+            "net_damage_per_match": 1.5483333333333333,
+            "damage_per_threat_tick": 0.34603049478247183
+          },
+          "opponent_metrics": {
+            "spatial_compression_per_tick": 0.14164824997115757,
+            "attack_rate": 0.2283662934140676,
+            "in_range_attack_rate": 0.22463749691146856,
+            "hit_rate_per_attack": 0.6737626262626263,
+            "threat_rate": 0.4203809270876815,
+            "next_tick_defensive_response_rate": 0.35330516788566324,
+            "damage_dealt_per_match": 3.29,
+            "damage_taken_per_match": 4.838333333333333,
+            "net_damage_per_match": -1.5483333333333333,
+            "damage_per_threat_tick": 0.3680738946439411
+          },
+          "pressure_minus_opponent": {
+            "spatial_compression_per_tick": 0.04733785388603154,
+            "attack_rate": 0.16112828782560956,
+            "in_range_attack_rate": 0.15861561711466715,
+            "hit_rate_per_attack": -0.08432122021711808,
+            "threat_rate": 0.24087318304913496,
+            "next_tick_defensive_response_rate": 0.2339401774815939,
+            "damage_dealt_per_match": 1.548333333333333,
+            "damage_taken_per_match": -1.548333333333333,
+            "net_damage_per_match": 3.0966666666666667,
+            "damage_per_threat_tick": -0.02204339986146925
+          },
+          "compact_arena_pressure_win_rate": 0.860036832412523,
+          "pressure_win_rate_change_when_starting_in_range": -0.020915548539857887
+        }
+      ],
+      "compact_arena_matchups": [
+        {
+          "opponent": "control",
+          "pressure_decisive_win_rate": 0.9287054409005628,
+          "wins_pressure": 495,
+          "wins_opponent": 38,
+          "draws": 67,
+          "pressure": {
+            "spatial_compression_per_tick": 0.05721896390447314,
+            "attack_rate": 0.45937615739238186,
+            "in_range_attack_rate": 0.4533442609905439,
+            "hit_rate_per_attack": 0.7423669201169202,
+            "threat_rate": 0.6235726580035483,
+            "next_tick_defensive_response_rate": 0.8325473256462034,
+            "damage_dealt_per_match": 4.928333333333334,
+            "damage_taken_per_match": 3.4183333333333334,
+            "net_damage_per_match": 1.51,
+            "damage_per_threat_tick": 0.5592384825213773
+          },
+          "opponent_metrics": {
+            "spatial_compression_per_tick": 0.05666115555174791,
+            "attack_rate": 0.27314216769383426,
+            "in_range_attack_rate": 0.27147119909271855,
+            "hit_rate_per_attack": 0.8567619047619047,
+            "threat_rate": 0.4383538880504345,
+            "next_tick_defensive_response_rate": 0.5370992063492064,
+            "damage_dealt_per_match": 3.4183333333333334,
+            "damage_taken_per_match": 4.928333333333334,
+            "net_damage_per_match": -1.51,
+            "damage_per_threat_tick": 0.5416801346801347
+          },
+          "pressure_minus_opponent": {
+            "spatial_compression_per_tick": 0.0005578083527252309,
+            "attack_rate": 0.1862339896985476,
+            "in_range_attack_rate": 0.18187306189782537,
+            "hit_rate_per_attack": -0.11439498464498454,
+            "threat_rate": 0.18521876995311382,
+            "next_tick_defensive_response_rate": 0.295448119296997,
+            "damage_dealt_per_match": 1.5100000000000002,
+            "damage_taken_per_match": -1.5100000000000002,
+            "net_damage_per_match": 3.02,
+            "damage_per_threat_tick": 0.01755834784124266
+          }
+        },
+        {
+          "opponent": "chaos",
+          "pressure_decisive_win_rate": 0.860036832412523,
+          "wins_pressure": 467,
+          "wins_opponent": 76,
+          "draws": 57,
+          "pressure": {
+            "spatial_compression_per_tick": 0.055733111179042484,
+            "attack_rate": 0.4467227719979606,
+            "in_range_attack_rate": 0.43755771267621046,
+            "hit_rate_per_attack": 0.5872173234831903,
+            "threat_rate": 0.6260555606642871,
+            "next_tick_defensive_response_rate": 0.5878819495983768,
+            "damage_dealt_per_match": 4.825,
+            "damage_taken_per_match": 3.315,
+            "net_damage_per_match": 1.51,
+            "damage_per_threat_tick": 0.42531855654275114
+          },
+          "opponent_metrics": {
+            "spatial_compression_per_tick": 0.05066438492229736,
+            "attack_rate": 0.26162310406293987,
+            "in_range_attack_rate": 0.2597244601042416,
+            "hit_rate_per_attack": 0.6753109668109668,
+            "threat_rate": 0.42639670953248837,
+            "next_tick_defensive_response_rate": 0.40624576118326117,
+            "damage_dealt_per_match": 3.315,
+            "damage_taken_per_match": 4.825,
+            "net_damage_per_match": -1.51,
+            "damage_per_threat_tick": 0.4194472816413606
+          },
+          "pressure_minus_opponent": {
+            "spatial_compression_per_tick": 0.005068726256745121,
+            "attack_rate": 0.18509966793502075,
+            "in_range_attack_rate": 0.17783325257196886,
+            "hit_rate_per_attack": -0.08809364332777647,
+            "threat_rate": 0.19965885113179876,
+            "next_tick_defensive_response_rate": 0.18163618841511564,
+            "damage_dealt_per_match": 1.5100000000000002,
+            "damage_taken_per_match": -1.5100000000000002,
+            "net_damage_per_match": 3.02,
+            "damage_per_threat_tick": 0.005871274901390555
+          }
+        }
+      ]
+    }
+  },
+  "replicated_diagnostics": {
+    "space_capture": {
+      "replicated_expected_direction": true,
+      "minimum_directional_delta": 0.03178440061592949,
+      "mean_directional_delta": 0.044427021572519404
+    },
+    "attack_opportunity_generation": {
+      "replicated_expected_direction": true,
+      "minimum_directional_delta": 0.06840924405669807,
+      "mean_directional_delta": 0.1312063888719786
+    },
+    "defensive_response_forcing": {
+      "replicated_expected_direction": true,
+      "minimum_directional_delta": 0.2036781939421911,
+      "mean_directional_delta": 0.2641211166979242
+    },
+    "damage_conversion": {
+      "replicated_expected_direction": false,
+      "minimum_directional_delta": -2.433333333333333,
+      "mean_directional_delta": 1.8083333333333333
+    },
+    "spatial_access_dependency": {
+      "pressure_advantage_reduced_in_all_matchups": false,
+      "mean_pressure_win_rate_change": -0.0035622424248856754,
+      "minimum_change": -0.020915548539857887,
+      "maximum_change": 0.007885380363994776
+    }
+  },
+  "interpretation": "This frozen diagnostic decomposes the v0.2 Pressure advantage without changing policies. It distinguishes attributable spatial compression, in-range attack opportunity use, delayed defensive forcing, and damage conversion. The compact-arena replay removes most initial approach distance as a diagnostic of spatial-access dependence."
+}
