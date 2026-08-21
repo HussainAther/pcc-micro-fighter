@@ -1,0 +1,108 @@
+{
+  "competitiveness_confirmed": false,
+  "design": {
+    "policy_families": [
+      "A",
+      "B"
+    ],
+    "modes": [
+      "pressure",
+      "control",
+      "chaos"
+    ],
+    "matches_per_order": 400,
+    "seed": 42001,
+    "seat_order_balanced": true,
+    "decisive_win_rate_window": [
+      0.3,
+      0.7
+    ],
+    "cycle_required": false,
+    "post_result_tuning_allowed": false
+  },
+  "families": {
+    "A": {
+      "all_pairwise_matchups_competitive": false,
+      "matchups": [
+        {
+          "a": "pressure",
+          "b": "control",
+          "wins_a": 0,
+          "wins_b": 583,
+          "draws": 217,
+          "a_win_rate_all_matches": 0.0,
+          "b_win_rate_all_matches": 0.72875,
+          "draw_rate": 0.27125,
+          "a_decisive_win_rate": 0.0,
+          "competitive": false
+        },
+        {
+          "a": "pressure",
+          "b": "chaos",
+          "wins_a": 664,
+          "wins_b": 74,
+          "draws": 62,
+          "a_win_rate_all_matches": 0.83,
+          "b_win_rate_all_matches": 0.0925,
+          "draw_rate": 0.0775,
+          "a_decisive_win_rate": 0.8997289972899729,
+          "competitive": false
+        },
+        {
+          "a": "control",
+          "b": "chaos",
+          "wins_a": 648,
+          "wins_b": 105,
+          "draws": 47,
+          "a_win_rate_all_matches": 0.81,
+          "b_win_rate_all_matches": 0.13125,
+          "draw_rate": 0.05875,
+          "a_decisive_win_rate": 0.8605577689243028,
+          "competitive": false
+        }
+      ]
+    },
+    "B": {
+      "all_pairwise_matchups_competitive": false,
+      "matchups": [
+        {
+          "a": "pressure",
+          "b": "control",
+          "wins_a": 648,
+          "wins_b": 48,
+          "draws": 104,
+          "a_win_rate_all_matches": 0.81,
+          "b_win_rate_all_matches": 0.06,
+          "draw_rate": 0.13,
+          "a_decisive_win_rate": 0.9310344827586207,
+          "competitive": false
+        },
+        {
+          "a": "pressure",
+          "b": "chaos",
+          "wins_a": 631,
+          "wins_b": 100,
+          "draws": 69,
+          "a_win_rate_all_matches": 0.78875,
+          "b_win_rate_all_matches": 0.125,
+          "draw_rate": 0.08625,
+          "a_decisive_win_rate": 0.8632010943912448,
+          "competitive": false
+        },
+        {
+          "a": "control",
+          "b": "chaos",
+          "wins_a": 315,
+          "wins_b": 399,
+          "draws": 86,
+          "a_win_rate_all_matches": 0.39375,
+          "b_win_rate_all_matches": 0.49875,
+          "draw_rate": 0.1075,
+          "a_decisive_win_rate": 0.4411764705882353,
+          "competitive": true
+        }
+      ]
+    }
+  },
+  "interpretation": "This gate tests only whether any synthetic mechanism trivially dominates another. It does not require or reward a Pressure-Chaos-Control dominance cycle."
+}

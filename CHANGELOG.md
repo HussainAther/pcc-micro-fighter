@@ -1,12 +1,14 @@
 # Changelog
 
+## 0.2.0
+
+- Added a second independently structured Pressure/Control/Chaos policy family.
+- Added a frozen, seat/order-balanced competitiveness protocol.
+- Explicitly rejected any requirement for a PCC dominance cycle.
+- Added `competitiveness` CLI output and validation artifact.
+- Preserved failures rather than tuning policies after the frozen run.
+
 ## 0.1.0
 
-- Added deterministic headless simultaneous-tick micro-fighter engine.
-- Added identical fighter rules with five shared actions: advance, retreat, attack, guard, evade.
-- Added neutral baseline plus provisional Pressure-, Control-, and Chaos-like synthetic policies.
-- Added descriptive action entropy, spatial constriction, damage, and action-rate observables.
-- Added seat/order-balanced pairwise smoke sweep and CLI.
-- Added frozen v0.1 ruleset, measurement contract, validation roadmap, CI, and tests.
-- Corrected an initial degenerate Control prototype before any scientific acceptance criteria were frozen.
-- No construct-recovery, balance, topology, or cross-game PCC claim is made in v0.1.0.
+- Initial deterministic headless micro-fighter laboratory.
+- Added identical fighters, five ordinary legal actions, provisional synthetic mechanisms, descriptive observables, CLI simulation, tests, and validation roadmap.

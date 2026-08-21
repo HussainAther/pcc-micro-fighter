@@ -1,11 +1,16 @@
-# Validation outputs
+# Validation artifacts
 
-`pairwise-sweep.json` is a **smoke/engineering diagnostic**, not a PCC confirmation artifact.
+## `competitiveness.json` — v0.2.0 frozen result
 
-The v0.1 default sweep shows three useful implementation facts:
+The first prospectively specified two-family competitiveness gate **failed**. The result is retained unchanged.
 
-- Pressure produces stronger spatial compression than the neutral baseline in the current provisional family.
-- Chaos produces the highest action entropy but is competitively weak, reinforcing that randomness/entropy alone cannot be treated as effective Chaos.
-- Control is competitively strong in the current provisional family, so v0.2 must define a balance/competitiveness protocol and a second independent policy family before construct recovery.
+- Family A: 0/3 pairwise matchups competitive.
+- Family B: 1/3 pairwise matchups competitive.
+- No dominance cycle was required.
+- Construct recovery is not authorized by this result.
 
-No rock-paper-scissors cycle is required or claimed.
+See `docs/COMPETITIVENESS_PROTOCOL.md` and `docs/FROZEN_COMPETITIVENESS_RESULT_v0.2.0.md`.
+
+## `pairwise-sweep.json` — v0.1.0 smoke artifact
+
+Engineering-only initial pairwise diagnostics from the first policy family. It predates the frozen v0.2 competitiveness gate and is not construct-validity evidence.
