@@ -20,3 +20,17 @@ Engineering-only initial pairwise diagnostics from the first policy family. It p
 
 Frozen descriptive Pressure-vs-Control decomposition of defense success, counter-window creation/use, landed punishment, cooldown punishment, positional recovery, and damage conversion. The result identifies a strong Family A vs Family B split in defense-to-counter conversion. It does not modify policies or authorize construct recovery.
 
+
+## `control-counter-intervention-v0.5.0.json` — prospective single-mechanism intervention
+
+Reruns the unchanged v0.2 competitiveness gate after modifying only Family B Control's recognition of a successful-defense cooldown punish window. The target Pressure-vs-Control matchup improved but remained noncompetitive; Control-vs-Chaos remained competitive. Construct recovery remains blocked.
+
+`competitiveness-v0.5.0.json` is the raw unchanged-gate output for the v0.5 policy state.
+
+- `residual-pressure-decomposition.json`: frozen v0.6 Family B residual Pressure diagnostic after the v0.5 Control counter-window intervention.
+
+## `control-recovery-intervention-v0.7.0.json` — prospective sustained-threat intervention
+
+Reruns the unchanged v0.2 competitiveness gate after one Family B Control change motivated by v0.6: recognition of sustained close Pressure with defense against attacks and retreat after advances. The target Pressure-vs-Control matchup worsened, while Control-vs-Chaos remained competitive. The negative result is retained and construct recovery remains blocked.
+
+`competitiveness-v0.7.0.json` is the raw unchanged-gate output for the v0.7 policy state.

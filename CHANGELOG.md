@@ -1,4 +1,24 @@
+## 0.7.0
+
+- Added one prospectively specified Family B Control sustained-threat recognition / spatial-recovery rule.
+- Preserved the v0.5 successful-defense punish-window rule with higher priority.
+- Reran the original v0.2 competitiveness gate unchanged.
+- Family B Pressure-vs-Control worsened from `0.821` to `0.979` Pressure decisive win rate.
+- Family B Control-vs-Chaos remained competitive.
+- Retained the negative intervention result without a second post-result adjustment.
+- Construct recovery remains blocked.
+
 # Changelog
+
+## 0.5.0
+
+- Added one prospectively justified Family B Control intervention from the frozen v0.4 mechanism result.
+- Family B Control now converts a publicly recognizable successful-defense opponent-cooldown window into an immediate attack when legal.
+- Reran the original v0.2 competitiveness gate unchanged.
+- Family B Pressure-vs-Control moved toward parity (`0.931` -> `0.821`) but remained outside the frozen `[0.30, 0.70]` window.
+- Family B Control-vs-Chaos remained competitive.
+- Full competitiveness remains unconfirmed; construct recovery remains blocked.
+- No second post-result intervention was added.
 
 ## 0.4.0
 
@@ -27,3 +47,10 @@
 - Decomposes space capture, attack opportunity generation, delayed defensive-response forcing, and damage conversion.
 - Added compact-arena diagnostic to probe spatial-access dependence.
 - No construct-recovery or balance confirmation is claimed by this diagnostic.
+
+## 0.6.0
+
+- Added frozen residual Family B Pressure decomposition after the v0.5 counter-window intervention.
+- Separated defense frequency, sustained threat persistence, positional concession/recovery, sustained-threat damage, and Pressure re-engagement.
+- Found that residual Pressure advantage is associated most strongly with low Control defense frequency and near-absent spatial recovery, not majority re-engagement after punishment.
+- No policies or engine parameters changed; construct recovery remains blocked.

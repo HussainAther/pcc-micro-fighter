@@ -2,7 +2,7 @@
 
 A deliberately tiny 1v1 fighting-game laboratory for testing whether PCC-like strategic mechanisms survive when **space and threat range** are introduced.
 
-This is not a conventional fighting game and not a PCC confirmation. v0.2.0 is a deterministic headless simulator designed to minimize confounds.
+This is not a conventional fighting game and not a PCC confirmation. v0.5.0 is a deterministic headless simulator designed to minimize confounds.
 
 ## Why this environment?
 
@@ -70,3 +70,37 @@ python -m pcc_micro_fighter threat-conversion
 
 See `docs/THREAT_CONVERSION_DECOMPOSITION_PROTOCOL.md` and `docs/FROZEN_THREAT_CONVERSION_RESULT_v0.4.0.md`.
 
+
+## v0.5 prospective Family B Control counter intervention
+
+The v0.4 decomposition justified one prospective policy change: Family B Control now recognizes a successful public guard/evade against an in-range opponent attack as a one-tick cooldown punish window and immediately attacks when its own attack cooldown is clear. No other policy or engine rule changes.
+
+The original v0.2 competitiveness gate was rerun unchanged. Family B Pressure-vs-Control moved from `0.931` to `0.821` Pressure decisive win rate, while Control-vs-Chaos remained competitive (`0.484`). The full gate still fails, so this is a **partial mechanistic improvement, not a successful rebalance**, and construct recovery remains blocked.
+
+Run the frozen intervention evaluation with:
+
+```bash
+python -m pcc_micro_fighter control-counter-intervention
+```
+
+See `docs/PROSPECTIVE_CONTROL_COUNTER_INTERVENTION_v0.5.0.md` and `docs/FROZEN_CONTROL_COUNTER_INTERVENTION_RESULT_v0.5.0.md`.
+
+## v0.6 residual Pressure decomposition
+
+After the v0.5 counter-window intervention improved but did not balance Family B Pressure-vs-Control, v0.6 freezes a descriptive residual-mechanism analysis. The result points away from repeated Pressure re-engagement and toward a broader defensive-state / spatial-recovery weakness in Family B Control: it defends only about 27% of Pressure attacks and regains distance after only about 3% of sustained close-threat sequences. See `docs/RESIDUAL_PRESSURE_DECOMPOSITION_PROTOCOL.md` and `docs/FROZEN_RESIDUAL_PRESSURE_RESULT_v0.6.0.md`.
+
+## v0.7 prospective sustained-threat recovery intervention
+
+The v0.6 residual decomposition motivated one prospective Family B Control rule: after two consecutive close-range opponent `advance`/`attack` actions, defend an immediate attack or retreat after an advance, while preserving the v0.5 punish-window priority.
+
+The unchanged competitiveness gate produced a retained **negative intervention result**. Family B Pressure-vs-Control worsened from `0.821` to `0.979` Pressure decisive win rate. Control-vs-Chaos remained competitive at `0.408`.
+
+This rules out the simple deterministic defense/retreat response as a justified balancing mechanism. No second v0.7 tuning step is allowed, and construct recovery remains blocked.
+
+Run the frozen evaluation with:
+
+```bash
+python -m pcc_micro_fighter control-recovery-intervention
+```
+
+See `docs/PROSPECTIVE_CONTROL_RECOVERY_INTERVENTION_v0.7.0.md` and `docs/FROZEN_CONTROL_RECOVERY_RESULT_v0.7.0.md`.

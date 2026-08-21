@@ -110,6 +110,34 @@ class ControlPolicyB:
                   Action.GUARD: 0.25, Action.EVADE: 0.0}
         last = view.public_history[-1][1] if view.public_history else None
         previous = view.public_history[-2][1] if len(view.public_history) >= 2 else None
+        own_last = view.public_history[-1][0] if view.public_history else None
+
+        # v0.5 prospective intervention: convert a publicly recognizable successful
+        # defense into the one-tick punish window identified by the frozen v0.4
+        # threat-conversion decomposition. No hidden state is used.
+        if (
+            view.distance <= 1
+            and view.self_attack_cd == 0
+            and last == Action.ATTACK.value
+            and own_last in (Action.GUARD.value, Action.EVADE.value)
+        ):
+            return Action.ATTACK
+
+        # v0.7 prospective intervention: recognize sustained close Pressure
+        # using only public history. After two consecutive opponent advance/attack
+        # actions at close range, defend an immediate attack or recover space after
+        # an advance. The v0.5 punish-window rule above keeps priority.
+        recent_opp = [b for _, b in view.public_history[-2:]]
+        sustained_close_pressure = (
+            view.distance <= 1
+            and len(recent_opp) == 2
+            and all(a in (Action.ADVANCE.value, Action.ATTACK.value) for a in recent_opp)
+        )
+        if sustained_close_pressure:
+            if last == Action.ATTACK.value:
+                return Action.EVADE if view.self_evade_cd == 0 else Action.GUARD
+            if last == Action.ADVANCE.value:
+                return Action.RETREAT
 
         if view.distance > 1:
             scores[Action.ADVANCE] += 1.0

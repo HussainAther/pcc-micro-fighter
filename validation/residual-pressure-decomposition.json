@@ -1,0 +1,53 @@
+{
+  "residual_pressure_decomposition_confirmed": false,
+  "status": "frozen_descriptive_residual_family_b_pressure_decomposition",
+  "design": {
+    "version": "0.6.0",
+    "policy_version": "0.5.0",
+    "policies_modified": false,
+    "expected_v05_policy_sha256": "93ca6c82abf1d1280334a7c048f4b01f59b7da5765f3d6b780b11cda919f1242",
+    "observed_policy_sha256": "93ca6c82abf1d1280334a7c048f4b01f59b7da5765f3d6b780b11cda919f1242",
+    "policy_hash_matches_expected": true,
+    "family": "B",
+    "matchup": "pressure_vs_control",
+    "matches_per_order": 400,
+    "seed": 75001,
+    "seat_order_balanced": true,
+    "post_result_policy_tuning_allowed": false,
+    "sustained_threat_definition": "at least two consecutive ticks where Pressure chooses advance/attack and remains within attack range after resolution",
+    "recovery_definition": "distance increases within two surviving ticks after a sustained close-threat run ends"
+  },
+  "matchup": {
+    "pressure_decisive_win_rate": 0.8216292134831461,
+    "wins_pressure": 585,
+    "wins_control": 127,
+    "draws": 88
+  },
+  "metrics": {
+    "pressure_threat_ticks": 11.915,
+    "pressure_close_threat_ticks": 10.56375,
+    "mean_pressure_threat_run_length": 1.890401535964036,
+    "max_pressure_threat_run_length": 3.74625,
+    "control_defense_rate_vs_pressure_attacks": 0.2680559874153624,
+    "control_defensive_action_rate_during_close_threat": 0.3317649345408633,
+    "control_retreat_rate_during_threat": 0.071064881893335,
+    "control_distance_gain_rate_during_threat": 0.005846144148678978,
+    "control_distance_loss_rate_during_threat": 0.24069761827488095,
+    "control_post_threat_recovery_rate": 0.030520833333333334,
+    "damage_taken_per_close_threat_tick": 0.48802794642040964,
+    "damage_taken_during_sustained_threat_per_match": 2.13625,
+    "damage_dealt_during_sustained_threat_per_match": 1.94875,
+    "control_hit_rate_during_close_threat": 0.33356237827145335,
+    "pressure_reengagement_rate_after_control_hit": 0.45187499999999997,
+    "pressure_reengagement_rate_after_successful_defense": 0.23425306637806637,
+    "net_damage_per_match": -1.22375
+  },
+  "diagnostic_flags": {
+    "control_defends_at_least_half_of_pressure_attacks": false,
+    "pressure_reengages_after_majority_of_control_hits": false,
+    "pressure_reengages_after_majority_of_successful_defenses": false,
+    "control_recovers_space_after_at_least_half_of_sustained_threats": false,
+    "sustained_threat_net_damage_favors_control": false
+  },
+  "interpretation": "This frozen v0.6 diagnostic decomposes the residual Family B Pressure advantage after the v0.5 public counter-window intervention. It measures defense frequency, sustained close-threat persistence, spatial concession/recovery, damage during sustained threat sequences, and Pressure re-engagement after Control hits or successful defenses. It changes no policy or engine parameter and does not authorize construct recovery."
+}

@@ -1,0 +1,256 @@
+{
+  "competitiveness_confirmed_after_intervention": false,
+  "status": "prospective_single_mechanism_intervention_evaluation",
+  "design": {
+    "version": "0.5.0",
+    "intervention": "Family B Control immediately attacks in a publicly recognizable successful-defense cooldown punish window.",
+    "baseline_policy_sha256": "511d01fa4d62fd912d7453505e76408a91a8e8065e35f5eeecd87659c432c360",
+    "expected_v05_policy_sha256": "93ca6c82abf1d1280334a7c048f4b01f59b7da5765f3d6b780b11cda919f1242",
+    "observed_v05_policy_sha256": "93ca6c82abf1d1280334a7c048f4b01f59b7da5765f3d6b780b11cda919f1242",
+    "policy_hash_matches_expected": true,
+    "only_family_b_control_intentionally_modified": true,
+    "competitiveness_protocol_unchanged": true,
+    "matches_per_order": 400,
+    "seed": 42001,
+    "decisive_win_rate_window": [
+      0.3,
+      0.7
+    ],
+    "cycle_required": false,
+    "post_result_tuning_allowed": false
+  },
+  "baseline_v0.2": {
+    "competitiveness_confirmed": false,
+    "design": {
+      "policy_families": [
+        "A",
+        "B"
+      ],
+      "modes": [
+        "pressure",
+        "control",
+        "chaos"
+      ],
+      "matches_per_order": 400,
+      "seed": 42001,
+      "seat_order_balanced": true,
+      "decisive_win_rate_window": [
+        0.3,
+        0.7
+      ],
+      "cycle_required": false,
+      "post_result_tuning_allowed": false
+    },
+    "families": {
+      "A": {
+        "all_pairwise_matchups_competitive": false,
+        "matchups": [
+          {
+            "a": "pressure",
+            "b": "control",
+            "wins_a": 0,
+            "wins_b": 583,
+            "draws": 217,
+            "a_win_rate_all_matches": 0.0,
+            "b_win_rate_all_matches": 0.72875,
+            "draw_rate": 0.27125,
+            "a_decisive_win_rate": 0.0,
+            "competitive": false
+          },
+          {
+            "a": "pressure",
+            "b": "chaos",
+            "wins_a": 664,
+            "wins_b": 74,
+            "draws": 62,
+            "a_win_rate_all_matches": 0.83,
+            "b_win_rate_all_matches": 0.0925,
+            "draw_rate": 0.0775,
+            "a_decisive_win_rate": 0.8997289972899729,
+            "competitive": false
+          },
+          {
+            "a": "control",
+            "b": "chaos",
+            "wins_a": 648,
+            "wins_b": 105,
+            "draws": 47,
+            "a_win_rate_all_matches": 0.81,
+            "b_win_rate_all_matches": 0.13125,
+            "draw_rate": 0.05875,
+            "a_decisive_win_rate": 0.8605577689243028,
+            "competitive": false
+          }
+        ]
+      },
+      "B": {
+        "all_pairwise_matchups_competitive": false,
+        "matchups": [
+          {
+            "a": "pressure",
+            "b": "control",
+            "wins_a": 648,
+            "wins_b": 48,
+            "draws": 104,
+            "a_win_rate_all_matches": 0.81,
+            "b_win_rate_all_matches": 0.06,
+            "draw_rate": 0.13,
+            "a_decisive_win_rate": 0.9310344827586207,
+            "competitive": false
+          },
+          {
+            "a": "pressure",
+            "b": "chaos",
+            "wins_a": 631,
+            "wins_b": 100,
+            "draws": 69,
+            "a_win_rate_all_matches": 0.78875,
+            "b_win_rate_all_matches": 0.125,
+            "draw_rate": 0.08625,
+            "a_decisive_win_rate": 0.8632010943912448,
+            "competitive": false
+          },
+          {
+            "a": "control",
+            "b": "chaos",
+            "wins_a": 315,
+            "wins_b": 399,
+            "draws": 86,
+            "a_win_rate_all_matches": 0.39375,
+            "b_win_rate_all_matches": 0.49875,
+            "draw_rate": 0.1075,
+            "a_decisive_win_rate": 0.4411764705882353,
+            "competitive": true
+          }
+        ]
+      }
+    },
+    "interpretation": "This gate tests only whether any synthetic mechanism trivially dominates another. It does not require or reward a Pressure-Chaos-Control dominance cycle."
+  },
+  "v0.5": {
+    "competitiveness_confirmed": false,
+    "design": {
+      "policy_families": [
+        "A",
+        "B"
+      ],
+      "modes": [
+        "pressure",
+        "control",
+        "chaos"
+      ],
+      "matches_per_order": 400,
+      "seed": 42001,
+      "seat_order_balanced": true,
+      "decisive_win_rate_window": [
+        0.3,
+        0.7
+      ],
+      "cycle_required": false,
+      "post_result_tuning_allowed": false
+    },
+    "families": {
+      "A": {
+        "all_pairwise_matchups_competitive": false,
+        "matchups": [
+          {
+            "a": "pressure",
+            "b": "control",
+            "wins_a": 0,
+            "wins_b": 583,
+            "draws": 217,
+            "a_win_rate_all_matches": 0.0,
+            "b_win_rate_all_matches": 0.72875,
+            "draw_rate": 0.27125,
+            "a_decisive_win_rate": 0.0,
+            "competitive": false
+          },
+          {
+            "a": "pressure",
+            "b": "chaos",
+            "wins_a": 664,
+            "wins_b": 74,
+            "draws": 62,
+            "a_win_rate_all_matches": 0.83,
+            "b_win_rate_all_matches": 0.0925,
+            "draw_rate": 0.0775,
+            "a_decisive_win_rate": 0.8997289972899729,
+            "competitive": false
+          },
+          {
+            "a": "control",
+            "b": "chaos",
+            "wins_a": 648,
+            "wins_b": 105,
+            "draws": 47,
+            "a_win_rate_all_matches": 0.81,
+            "b_win_rate_all_matches": 0.13125,
+            "draw_rate": 0.05875,
+            "a_decisive_win_rate": 0.8605577689243028,
+            "competitive": false
+          }
+        ]
+      },
+      "B": {
+        "all_pairwise_matchups_competitive": false,
+        "matchups": [
+          {
+            "a": "pressure",
+            "b": "control",
+            "wins_a": 597,
+            "wins_b": 130,
+            "draws": 73,
+            "a_win_rate_all_matches": 0.74625,
+            "b_win_rate_all_matches": 0.1625,
+            "draw_rate": 0.09125,
+            "a_decisive_win_rate": 0.8211829436038515,
+            "competitive": false
+          },
+          {
+            "a": "pressure",
+            "b": "chaos",
+            "wins_a": 631,
+            "wins_b": 100,
+            "draws": 69,
+            "a_win_rate_all_matches": 0.78875,
+            "b_win_rate_all_matches": 0.125,
+            "draw_rate": 0.08625,
+            "a_decisive_win_rate": 0.8632010943912448,
+            "competitive": false
+          },
+          {
+            "a": "control",
+            "b": "chaos",
+            "wins_a": 355,
+            "wins_b": 378,
+            "draws": 67,
+            "a_win_rate_all_matches": 0.44375,
+            "b_win_rate_all_matches": 0.4725,
+            "draw_rate": 0.08375,
+            "a_decisive_win_rate": 0.4843110504774898,
+            "competitive": true
+          }
+        ]
+      }
+    },
+    "interpretation": "This gate tests only whether any synthetic mechanism trivially dominates another. It does not require or reward a Pressure-Chaos-Control dominance cycle."
+  },
+  "target_matchup": {
+    "family": "B",
+    "matchup": "pressure_vs_control",
+    "baseline_pressure_decisive_win_rate": 0.9310344827586207,
+    "v05_pressure_decisive_win_rate": 0.8211829436038515,
+    "pressure_win_rate_change": -0.1098515391547692,
+    "moved_toward_competitiveness": true,
+    "competitive_after_intervention": false
+  },
+  "collateral_matchup": {
+    "family": "B",
+    "matchup": "control_vs_chaos",
+    "baseline_control_decisive_win_rate": 0.4411764705882353,
+    "v05_control_decisive_win_rate": 0.4843110504774898,
+    "control_win_rate_change": 0.04313457988925451,
+    "remained_competitive": true
+  },
+  "interpretation": "The prospectively justified Family B Control counter-window rule moved the target Pressure-vs-Control matchup toward the frozen competitiveness window but did not bring it inside the window. Control-vs-Chaos remained competitive. The intervention is therefore a partial mechanistic improvement, not a successful rebalance and not authorization for construct recovery."
+}
